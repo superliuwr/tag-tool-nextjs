@@ -1,4 +1,4 @@
-import TagSearchBar from './TagSearchBar'
+import SearchBar from './SearchBar'
 
 const tagManagerStyle = {
   margin: 20,
@@ -8,7 +8,7 @@ const tagManagerStyle = {
 
 const TagManager = () => (
   <div style={tagManagerStyle}>
-    <TagSearchBar />
+    <SearchBar placeholder='Type tag name to search...' />
   </div>
 )
 

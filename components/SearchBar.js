@@ -1,9 +1,9 @@
 import { Button, Classes, InputGroup, Intent } from '@blueprintjs/core'
 
-const TagSearchBar = () => (
+const SearchBar = (props) => (
   <div className='pt-input-group'>
     <span className='pt-icon pt-icon-search'></span>
-    <input className='pt-input' type='search' placeholder="Type tag name to search..." dir="auto" />
+    <input className='pt-input' type='search' placeholder={props.placeholder} dir="auto" />
     <Button 
       className={Classes.MINIMAL} 
       iconName='arrow-right'
@@ -12,4 +12,4 @@ const TagSearchBar = () => (
   </div>
 )
 
-export default TagSearchBar
+export default SearchBar
