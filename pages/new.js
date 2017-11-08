@@ -1,9 +1,13 @@
+import CustomHead from '../components/Head'
 import Layout from '../components/BasicLayout'
 
 const NewTag = () => (
-    <Layout>
-        <h1>Create A New Tag</h1>
-    </Layout>
+    <div>
+        <CustomHead title="New Tag" />
+        <Layout>
+            TBD - Add tag form here
+        </Layout>
+    </div>
 )
 
 export default NewTag
