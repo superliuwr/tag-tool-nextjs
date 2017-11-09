@@ -7,7 +7,7 @@ const tagManagerStyle = {
   border: '1px solid #DDD'
 }
 
-const tags = [{"title": "tag 1"}, {"title": "tag 2"}, {"title": "tag 3"}]
+const tags = [{"id": "a", "title": "tag 1", "activated": false}, {"id": "b", "title": "tag 2", "activated": true}, {"id": "c", "title": "tag 3", "activated": false}]
 
 const TagManager = () => (
   <div style={tagManagerStyle}>

@@ -1,4 +1,5 @@
 import React from 'react'
+import SearchResult from './SearchResult'
 
 class SearchResults extends React.Component {
   render() {
@@ -6,7 +7,7 @@ class SearchResults extends React.Component {
       <div>
         <ul>
           {this.props.tags.map(tag => {
-            return <li><span>{tag.title}</span></li>
+            return <SearchResult title={tag.title} activated={tag.activated} />
           })}
         </ul>
       </div>
